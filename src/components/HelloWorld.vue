@@ -1,5 +1,5 @@
 <script setup>
-const title = 'HelloWorld Title 1';
+const title = 'HelloWorld Title';
 </script>
 
 <template>

@@ -5,8 +5,9 @@ Specificially, the fact that HelloWorld.vue contains both `<script setup>` and `
 
 The problem only appears when the project is built (`npm run build`) for production, and the umd file is imported from another app (mounting a #app tag) - in dev mode (`npm run dev`) everything is working fine
 
-To reproduce, try entering something in the input tag : console will display error about data var in the v-model being undefined
-Checking out the built source (minification disabled), here's the generated function :
+To reproduce, try entering something in the input tag : console will display error about data var in the v-model being undefined.
+
+Checking out the built source (minification disabled), here's the generated function (from `dist/test-lib.umd.js` after running `npm run build`) :
 ```
   function setup(__props) {
     const title = "HelloWorld Title 1";
